@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Catalogo</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap-grid.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap-grid.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap-reboot.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap-reboot.min.css">
+    <script type="text/javascript" src="../js/funciones.js"></script>
+
+</head>
+  <body>
+  <!--------------------------------------------------------------------------- Logotipos del tec----------------------------------------->
+    <div class="row">
+      <div class="col-md-12">
+        <img src="images/logos/logotecnm.png" width="15%" style="margin:0% 10%;">
+        <img src="images//logos/logosep.png" width="15%" style="margin:0% 5%;">
+        <img src="images/logos/logotec.png" width="15%"style="margin:0% 5%;">
+      </div>
+    </div> 
+
+<form action="src/acciones_db.php" method="POST">
+    <div class="form-row">
+        <div class="form-group col-md-12" style="text-align: center;">
+            <label>Foto/Logo</label>
+            <input type="file" name="foto" required/>
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-4">
+            <label>Tipo</label>
+            <select name="tipo_usuario" required>
+                <option value="alumnos">Alumnos</option>
+                <option value="empresas">Empresas</option>
+            </select>
+        </div>
+        <div class="form-group col-md-4">
+            <label>matricula</label>
+            <input type="text" class="form-control" name="matricula"  required>    
+
+        </div>
+        <div class="form-group col-md-4">
+                <label>Password</label>
+                <input type="password" class="form-control" name="password"  required>    
+
+        </div>
+    </div>
+    
+    <div class="form-row">
+        <div class="col-md-12" style="text-align: center;">
+                <input type="submit" class="btn btn-primary" id="nuevo_registro" name="nuevo_registro" value="REGISTRAR">
+        </div>
+    </div>
+</form>
+
+</body>
+</html>

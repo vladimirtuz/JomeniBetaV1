@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Login</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body style="overflow-y: hidden;">
+	
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100">
+				<form class="login100-form" action="src/valida_login.php" method="POST" >
+					<span class="login100-form-title p-b-26">
+						SISTEMA ANTEPROYECTOS ITC
+					</span>
+				
+
+					<div class="wrap-input100" >
+						<input class="input100" type="text" name="user" required>
+						<span class="focus-input100" data-placeholder="Matricula"></span>
+					</div>
+
+					<div class="wrap-input100" >
+						<input class="input100" type="password" name="pass" required>
+						<span class="focus-input100" data-placeholder="Password"></span>
+					</div>
+
+					<div class="container-login100-form-btn">
+						<div class="wrap-login100-form-btn">
+							<div class="login100-form-bgbtn"></div>
+							<button class="login100-form-btn" onclick="envia_datos()">
+								INICIAR SESION 
+							</button>
+						</div>
+
+					</div>
+
+				
+
+				</form>
+
+
+						<div class="container-login100-form-btn">
+								<div class="wrap-login100-form-btn">
+									<div class="login100-form-bgbtn"></div>
+									<button class="login100-form-btn" onclick="location.href='src/proyectos.php';">
+										INICIAR COMO INVITADO
+									</button>
+								</div>
+							</div>
+			
+							
+				
+				<div class="container-login100-form-btn">
+					<div class="wrap-login100-form-btn">
+						<div class="login100-form-bgbtn"></div>
+						<button class="login100-form-btn" onclick="registra()">
+							REGISTRARSE
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		function registra(){
+			window.open("registro.html");
+		}
+	</script>
+</body>
+</html>
